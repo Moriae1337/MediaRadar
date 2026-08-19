@@ -1,0 +1,47 @@
+name: Daily Media AI Creator Coach
+
+on:
+  schedule:
+    # Run twice daily: Morning at 08:00 UTC and Evening at 18:00 UTC
+    - cron: '0 8,18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-ai-coach:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Daily Media AI Creator Coach
+        env:
+          DISCORD_COACH_WEBHOOK_URL: ${{ secrets.DISCORD_COACH_WEBHOOK_URL }}
+          PROFILE_URL: ${{ secrets.PROFILE_URL }}
+          GEMINI_COACH_API_KEY: ${{ secrets.GEMINI_COACH_API_KEY }}
+        run: |
+          python services/coach_service/main.py
+
+      - name: Commit & Push history.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(coach): update history.json analytics snapshot [skip ci]"
+          file_pattern: "services/coach_service/data/history.json"
+          commit_user_name: "moriae1337"
+          commit_user_email: "moriae1337@gmail.com"
