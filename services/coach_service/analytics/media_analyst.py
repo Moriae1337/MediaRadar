@@ -8,6 +8,21 @@ import yt_dlp
 logger = logging.getLogger(__name__)
 
 
+class QuietLogger:
+    """Dummy silent logger for yt-dlp to suppress stdout/stderr noise."""
+    def debug(self, msg):
+        pass
+
+    def info(self, msg):
+        pass
+
+    def warning(self, msg):
+        pass
+
+    def error(self, msg):
+        pass
+
+
 class MediaAnalyst:
     """Analyst class for retrieving and computing social media profile analytics.
 
@@ -85,7 +100,7 @@ class MediaAnalyst:
             "playlistend": video_limit,
             "skip_download": True,
             "ignoreerrors": True,
-            "logger": None,
+            "logger": QuietLogger(),
         }
 
         for url in urls_to_try:

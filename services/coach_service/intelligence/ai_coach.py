@@ -1,5 +1,6 @@
 import json
 import logging
+import time
 from pathlib import Path
 from typing import Dict
 import requests
@@ -127,12 +128,24 @@ class AICreatorCoach:
             },
         }
 
-        resp = requests.post(url, json=payload, timeout=12)
-        if resp.status_code == 200:
-            result_json = resp.json()
-            text = result_json["candidates"][0]["content"]["parts"][0]["text"].strip()
-            return text
-        else:
-            err_msg = f"[AICreatorCoach] Gemini API returned status {resp.status_code}: {resp.text}"
-            logger.error(err_msg)
-            raise RuntimeError(err_msg)
+        # Send request with a 35-second timeout and 1 automatic retry on ReadTimeout
+        max_attempts = 2
+        for attempt in range(1, max_attempts + 1):
+            try:
+                resp = requests.post(url, json=payload, timeout=35)
+                if resp.status_code == 200:
+                    result_json = resp.json()
+                    text = result_json["candidates"][0]["content"]["parts"][0]["text"].strip()
+                    return text
+                else:
+                    err_msg = f"[AICreatorCoach] Gemini API returned status {resp.status_code}: {resp.text}"
+                    logger.error(err_msg)
+                    raise RuntimeError(err_msg)
+            except requests.exceptions.Timeout as e:
+                logger.warning(f"[AICreatorCoach] Gemini API call timed out on attempt {attempt}/{max_attempts}: {e}")
+                if attempt == max_attempts:
+                    raise e
+                time.sleep(2)
+            except Exception as e:
+                logger.error(f"[AICreatorCoach] Error calling Gemini API: {e}")
+                raise e
