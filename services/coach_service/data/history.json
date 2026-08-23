@@ -87,6 +87,17 @@
       "top_video_id": null,
       "mode": "checkin",
       "message": "Morning @zerdamage. Fresh timeline session. We're building from the ground up, so technical discipline on every cut is what will dictate your baseline retention.\n\nLock in these two execution standards as you sequence today's upload:\n\n1. **L-Cut Audio Overhangs (Context Transitions):** When shifting between distinct topics, let the trailing audio of your last word linger 8 to 12 frames *into* the next visual clip. This creates a smooth visual-audio overlap that softens context switches and prevents hard narrative stops that invite viewer bounce.\n2. **Single-Accent Visual Hierarchy:** Restrict screen graphics, text highlights, and arrows to a single, high-contrast accent color per section while keeping background elements neutral. Feeding the viewer multiple competing color cues splits attention and causes visual fatigue.\n\nLock into the edit, keep the pacing tight, and get the render queued today. Push it through."
+    },
+    {
+      "date": "2026-08-23",
+      "timestamp": "2026-08-23T18:11:34.576191+00:00",
+      "time_of_day": "Evening",
+      "username": "zerdamage",
+      "avg_views": 0,
+      "avg_engagement": 0.0,
+      "top_video_id": null,
+      "mode": "checkin",
+      "message": "Evening @zerdamage. Night shift on the timeline. We’re laying down the baseline, which means technical precision on every single frame is non-negotiable. \n\nLock in these two execution standards before you hit render tonight:\n\n1. **Subject Isolation (Background Dimming):** When dropping text callouts or secondary graphics over full-motion footage, drop the background layer opacity down to 50% or add a subtle 10px gaussian blur. This creates instant focal separation, forcing the viewer's eye straight to key information without visual clutter competing for attention.\n2. **Sidechain Audio Ducking:** Stop setting background music to a static volume across the whole timeline. Key a sidechain compressor on your music track directly to your voiceover line so the score automatically ducks down -12dB to -15dB during speech and recovers during intentional pauses. This keeps high production energy while preserving 100% vocal crispness.\n\nKeep your standards locked, execute these edits clean, and get the export queued tonight. Push it through."
     }
   ]
 }
