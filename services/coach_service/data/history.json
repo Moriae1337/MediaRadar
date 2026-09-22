@@ -505,6 +505,17 @@
       "top_video_id": null,
       "mode": "checkin",
       "message": "Evening @zerdamage. Night shift on the timeline. Building this channel baseline from scratch demands strict technical discipline—every frame and audio transient must earn its keep to hold viewer retention.\n\nLock in these two execution standards before you queue tonight's render:\n\n1. **2-Frame Motion-Squeeze B-Roll Entrances:** On transitions from A-roll to full-screen B-roll, apply a 2-frame, 15px horizontal motion blur paired with a -10% scale squeeze on frame 1 of the incoming clip before snapping to 100%. This gives secondary footage a physical kinetic \"snap\" into the frame, masking hard cuts while signaling a high-value visual shift.\n2. **Instant Spatial Tail Mute on Dramatic Pauses:** When cutting to silence for a key point or dramatic pause, automate a hard mute on your reverb and delay send tracks 1 frame *before* the voiceover stops. Killing decay tails instantly eliminates ambient blur, creating a dead-silent acoustic vacuum that hyper-focuses attention on your next VO delivery.\n\nKeep your head down, execute every cut clean, and get tonight's export queued. Push it through."
+    },
+    {
+      "date": "2026-09-22",
+      "timestamp": "2026-09-22T20:34:51.545887+00:00",
+      "time_of_day": "Evening",
+      "username": "zerdamage",
+      "avg_views": 0,
+      "avg_engagement": 0.0,
+      "top_video_id": null,
+      "mode": "checkin",
+      "message": "Evening @zerdamage. Night shift on the timeline. We’re holding high technical standards on this baseline build—clean execution and precise pacing are what will protect retention on this export.\n\nLock in these two execution standards before queuing tonight's render:\n\n1. **1.5% Linear Scale-Drift on Extended A-Roll:** On any A-roll clip lasting longer than 2.5 seconds without a cut, set a slow, linear 1.5% scale zoom pushed directly toward your subject's dominant eye line. That continuous micro-movement prevents visual stagnation without feeling jarring or forcing an unnecessary jump-cut.\n2. **Mid-Side Center-Carve for VO Separation:** On your background music bus, apply a Mid-Side EQ and notch out -3dB between 1.5kHz and 3kHz strictly on the Mid channel while keeping the Side channels flat. This carves a dedicated spatial corridor in the center of the mix for your voiceover without gutting the energy or stereo width of the track.\n\nKeep your discipline tight, polish every frame, and get the export queued tonight. Push it through."
     }
   ]
 }
