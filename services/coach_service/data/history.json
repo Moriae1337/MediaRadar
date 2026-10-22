@@ -714,6 +714,17 @@
       "top_video_id": null,
       "mode": "checkin",
       "message": "Evening @zerdamage. Night shift on the timeline. Building a channel baseline from scratch takes unyielding technical execution—every single frame shift and audio layer must actively hold retention.\n\nLock in these two execution standards before queuing tonight's render:\n\n1. **3-Frame Directional Blur on Spatial Transitions:** Apply a 180-degree shutter directional blur aligned with the visual trajectory of incoming footage across 2 frames before and 1 frame after a hard cut. This sells spatial continuity and eliminates visual snapping during rapid narrative pushes.\n2. **Sibilance-Triggered Dynamic EQ Notch on Background Tracks:** Set a dynamic EQ notch at 3.5kHz (-3.5dB) on your music bus, sidechained to your dialogue stem's high frequencies. This keeps top-end sparkle alive in the music, but instantly carves out high-frequency space whenever vocal consonants hit, locking in absolute speech clarity.\n\nKeep your standards locked, polish every cut, and get tonight's export queued. Push it through."
+    },
+    {
+      "date": "2026-10-22",
+      "timestamp": "2026-10-22T20:55:36.422815+00:00",
+      "time_of_day": "Evening",
+      "username": "zerdamage",
+      "avg_views": 0,
+      "avg_engagement": 0.0,
+      "top_video_id": null,
+      "mode": "checkin",
+      "message": "Evening @zerdamage. Night shift on the timeline. Building this channel baseline from absolute zero takes ruthless technical discipline—every single cut and audio decision must earn its place to guard retention.\n\nLock in these two execution standards before queuing tonight’s render:\n\n1. **Anchor-Point Eye-Line Snap on Thesis Cuts:** When scaling A-roll up for emphasis during key takeaway lines, shift the clip’s transform anchor point directly onto your subject's leading eye before applying a clean +6% scale jump. Aligning visual focal points across scale shifts eliminates eye re-adjustment, keeping viewer attention glued directly to the message.\n2. **Mid-Side Center Carve for Music Track Spacing:** Place a Mid-Side EQ on your background music bus and duck *only* the Mid (center) channel by -3dB between 400Hz and 3.5kHz while dialogue is active. Leaving the stereo Side channels untouched maintains the music's full energy and width while carving out a pristine center lane for your voiceover.\n\nKeep your standards locked, polish every frame clean, and get tonight's export queued. Push it through."
     }
   ]
 }
